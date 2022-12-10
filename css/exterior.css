@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-decoration: none;
+}
+header{
+    padding: 25px 0;
+    text-align: center;
+    background: #222;
+}
+header img{
+    width: 100px;
+    height: 13px;
+
+}
+
+.wrapper {
+    margin: 30px auto;
+    width: 100%;
+
+}
+.door{
+    height: 100px;
+    width: 230px;
+    position: relative;
+    top: 120px;
+    left: 120px;
+    
+}
+.door1{
+    height: 100px;
+    width: 230px;
+    transform: scale(1.3);
+}
+
+.wrapper .car {
+    width: 100%;
+    min-height: 350px;
+    
+    background:#fff url(../public/tesla.472d2fe2.jpg) no-repeat top;
+   background-size: contain;
+}
+.car_wheel{
+    background-image: url(https://nervous-johnson-56e9e4.netlify.app/static/media/wheel-21.a3203d2a.png);
+    height: 80px;
+    width: 80px;
+    bottom: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    -webkit-animation: infinite-spinning .48s steps(12) infinite;
+    animation: infinite-spinning .48s steps(12) infinite;
+}
+.car_wheel2{
+    background-image: url(https://nervous-johnson-56e9e4.netlify.app/static/media/wheel-21.a3203d2a.png);
+    height: 80px;
+    width: 80px;
+    bottom: 0;
+    right: 16px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    -webkit-animation: infinite-spinning .48s steps(12) infinite;
+    animation: infinite-spinning .48s steps(12) infinite;
+}
+@keyframes infinite-spinning {
+    0% {
+        -webkit-transform: rotate(0deg); 
+        transform: rotate(0deg)
+
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
+    }
+}
+.tesla_wheels{
+    height: 247px;
+    width: 448px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.wrapper .bottom {
+    display: flex;
+    gap: 70px;
+    width: 1147px;
+    height: 77px;
+    margin: 0 auto
+}
+
+.wrapper .bottom .arrow {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between
+}
+
+.wrapper .bottom .arrow .info {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #707070
+}
+
+.wrapper .bottom .arrow .arrow-left-spec {
+    width: 90px
+}
+
+.wrapper .bottom .arrow .main_info {
+    width: 176px;
+    height: 59px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 59px;
+    color: #000
+}
+
+
+.wrapper .bottom .arr-spec {
+    margin-left: 40px
+}
+
+.arrow-right div p {
+    margin-bottom: 8px
+}
+
+.blocks {
+    width: fit-content;
+    height: 115px;
+    display: flex;
+    gap: 80px;
+    margin: 0 auto 55px;
+    text-align: center
+}
+
+.blocks .left_block p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #707070
+}
+
+.blocks .left_block h2 {
+    font-size: 64px
+}
+
+.blocks .right_block p {
+    font-size: 20px
+}
+
+.blocks .right_block h2 {
+    font-size: 62px
+}
+
+.text {
+    font-size: 14px;
+    color: grey;
+    margin-bottom: 10px;
+}
+button{
+    border: none;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+
+
+#toggle {
+
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 24px;
+    border-radius: 35px;
+    background-color: #333;
+    transition: 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+#toggle.active{
+    background-color: #0059ff;
+}
+
+
+#toggle .dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: #ffebcd;
+    transform: scale(0.9);
+    border-radius: 50%;
+    transition: 0.3s;
+
+}
+
+#toggle.active .dot{
+    left: 24px;
+
+}
+
+#toggle1{
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 24px;
+    border-radius: 35px;
+    background-color: #333;
+    transition: 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+#toggle1 .dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: #ffebcd;
+    transform: scale(0.9);
+    border-radius: 50%;
+    transition: 0.3s;
+
+}
+#toggle1.active{
+    background-color: #0059ff;
+}
+
+#toggle1.active .dot{
+    left: 24px;
+
+}
+#toggle2{
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 24px;
+    border-radius: 35px;
+    background-color: #333;
+    transition: 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+#toggle2 .dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: #ffebcd;
+    transform: scale(0.9);
+    border-radius: 50%;
+    transition: 0.3s;
+
+}
+#toggle2.active .dot{
+    left: 24px;
+    transition: 0.3s;
+
+
+}
+#toggle2.active{
+    background-color: #0059ff;
+}
+/* /////// */
+.tesla-wheel--19 {
+    background-image: url(/static/media/wheel-19.000182ec.png);
+    -webkit-animation: infinite-spinning 250ms steps(6) infinite;
+    animation: infinite-spinning 250ms steps(6) infinite;
+}
+
+.tesla-wheel--21 {
+    background-image: url(/static/media/wheel-21.a3203d2a.png);
+    -webkit-animation: infinite-spinning 480ms steps(12) infinite;
+    animation: infinite-spinning 480ms steps(12) infinite;
+}
+
+
+
+

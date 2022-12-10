@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a{
+    color: grey;
+}
+
+.container {
+    width: 90%;
+    height: 970px;
+    margin: 0 auto
+}
+
+.top-wrap {
+    background-image: url(../public/black.png);
+    object-fit: cover;
+    margin: 0 auto;
+    display: none;
+    transition: 500ms;
+    height: 700px;
+    width: 100%;
+}
+.top-wrap.active{
+    display: block;
+    transition: 500ms;
+    transition: .5s ease;
+}
+
+body {
+    background-color: #fff
+}
+
+.wrap {
+    display: flex;
+    justify-content: center
+}
+
+.p-text-info {
+    display: flex;
+    gap: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #707070
+}
+
+.count-wrap {
+    display: flex;
+    gap: 80px;
+    justify-content: center
+}
+
+.text-count {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 79px;
+    position: relative;
+    top: -34px;
+    left: 20px;
+    color: #000
+}
+
+.coloros-block {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 10px
+}
+
+.title-color p {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    position: relative;
+    right: 30px;
+    top: -20px;
+    color: #707070
+}
+
+.cirecli-colors-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 15px
+}
+
+.info-title {
+    margin-bottom: 20px
+}
+
+#cirecli-block {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid #000000;
+    right: 102px
+}
+
+.title-chek {
+    margin-left: -40px
+}
+
+#cirecli-block-2 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    right: 102px
+}
+
+#cirecli-block-3 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    background-color: #ebcbcb;
+    border-radius: 50%;
+    position: relative;
+    right: 102px
+}
+
+.chek-text {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 145px;
+    top: -78px;
+    color: #707070
+}
+.toggle{
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 24px;
+    border-radius: 35px;
+    background-color: #333;
+    transition: 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 25px;
+
+}
+.toggle .dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: #ffebcd;
+    transform: scale(0.9);
+    border-radius: 50%;
+    transition: 0.3s;
+
+}
+.toggle.active{
+    background-color: #0059ff;
+}
+
+.toggle.active .dot{
+    left: 24px;
+
+}
+
+.wrpper {
+    position: relative;
+    right: 90px
+}
+
+.chek-block {
+    margin-left: -10px;
+    width: 50px;
+    height: 20px;
+    background-color: #838383;
+    position: relative;
+    top: 55px;
+    right: 102px;
+    border-radius: 40px
+}
+
+.cirecli-chek {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 100px
+}
+.dot{
+    cursor: pointer;
+    transition: 500ms;
+}
+.dot.active{
+    transform: scale(80%);
+    transition: 500ms;
+}

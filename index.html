@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/exterior.css">
+</head>
+<body>
+    <header>
+        <img src="https://nervous-johnson-56e9e4.netlify.app/static/media/logo.f73b7a3b.svg" alt="">
+    </header>
+    <div class="wrapper">
+        <div class="car">
+            <div class="tesla_wheels">
+                <div class="door"><a href="./interior.html">
+                    <div class="door1"></div>
+                </a></div>
+            <div class="car_wheel"></div>
+            <div class="car_wheel2"></div>
+        </div>
+        </div>
+        <div class="blocks">
+            <div class="left_block">
+                <p>Запас хода</p>
+                <h2><span id="range">750</span> км</h2>
+            </div>
+            <div class="right_block">
+                <p>Цена</p>
+                <h2>$ <span id="price">89990</span></h2>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="arrow">
+                <div class="arrow-left">
+                    <p class="info">Скорость автомобиля</p>
+                    <p class="main_info"><span id="speed">60</span> км/ч</p>
+                </div>
+                <div class="arrow-right">
+                    <div>
+                        <button class="btnAll" data-key="range-speed" data-type="procent-fix" data-count="5-20"
+                data-plus="false-true"><img id="speed_up" src="./public/image 3.png"></button>
+                <button class="btnAll" data-key="range-speed" data-type="procent-fix" data-count="5-20"
+                data-plus="true-false"><img id="speed_down" src="./public/image 4.png"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow">
+                <div class="arrow-left">
+                    <p class="info">Температура за окнами</p>
+                    <p class="main_info"><span id="temperature">20</span>°</p>
+                </div>
+                <div class="arrow-right">
+                    <div>
+                        <button  class="btnAll" data-key="range-temperature" data-type="procent-fix" data-count="3-5"
+                        data-plus="false-true"><img id="temp_up" src="./public/image 3.png"></button> 
+                        <button class="btnAll" data-key="range-temperature" data-type="procent-fix" data-count="3-5"
+                data-plus="true-false"><img id="temp_down" src="./public/image 4.png"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow  ">
+                <div class="arrow-left arrow-left-spec">
+                    <p class="info">Диски</p>
+                    <p class="main_info"><span id="saka">19</span></p>
+                </div>
+                <div class="arrow-right">
+                    <div arr-spec>
+                        <button class="btnAll" data-key="range-saka-price" data-type="procent-fix-fix" data-count="5-2-1000"
+                data-plus="false-true-true"><img id="disk_up" src="./public/image 3.png"></button>
+                        <button class="btnAll" data-key="range-saka-price" data-type="procent-fix-fix" data-count="5-2-1000"
+                data-plus="true-false-false"><img id="disk_down" src="./public/image 4.png"></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="toggle__left" >
+                <div class="text">Кондиционер</div>
+                <div id="toggle1" data-limit="1">
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="toggle__center">
+                <div class="text">Версия Long Range</div>
+                <div id="toggle">
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="toggle__right">
+                <a href="./interior.html">
+                    <div class="text">Вид автомобиля</div>
+                    <div id="toggle2">
+                        <div class="dot"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./app.js"></script>
+
+</html>
+
+
